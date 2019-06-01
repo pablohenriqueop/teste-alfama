@@ -1,0 +1,59 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Pablo\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'popper.js',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.9
+3 info using node@v8.11.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData popper.js
+8 silly fetchNamedPackageData popper.js
+9 silly mapToRegistry name popper.js
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'popper.js',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'popper.js',
+12 silly mapToRegistry   name: 'popper.js',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/popper.js
+14 verbose request uri https://registry.npmjs.org/popper.js
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 01:02:30
+17 verbose request id 2fb8daee525be80d
+18 verbose etag W/"46bdbf0ad9be4a5cf6f2dd8a5262529f"
+19 verbose lastModified Thu, 04 Apr 2019 13:25:58 GMT
+20 http request GET https://registry.npmjs.org/popper.js
+21 info retry will retry, error on last attempt: Error: socket hang up
+22 info attempt registry request try #2 at 01:02:55
+23 verbose etag W/"46bdbf0ad9be4a5cf6f2dd8a5262529f"
+24 verbose lastModified Thu, 04 Apr 2019 13:25:58 GMT
+25 http request GET https://registry.npmjs.org/popper.js
+26 info retry will retry, error on last attempt: Error: socket hang up
+27 verbose stack Error: kill ENOSYS
+27 verbose stack     at Object._errnoException (util.js:992:11)
+27 verbose stack     at process.kill (internal/process.js:183:18)
+27 verbose stack     at process.listener (C:\Users\Pablo\AppData\Roaming\npm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+27 verbose stack     at emitNone (events.js:111:20)
+27 verbose stack     at process.emit (events.js:208:7)
+27 verbose stack     at processEmit (C:\Users\Pablo\AppData\Roaming\npm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+27 verbose stack     at processEmit (C:\Users\Pablo\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+27 verbose stack     at Signal.wrap.onsignal (internal/process.js:208:44)
+28 verbose cwd C:\Users\Pablo\Documents\Projetos\sigma
+29 error Windows_NT 6.3.9600
+30 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Pablo\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "popper.js" "--save"
+31 error node v8.11.2
+32 error npm  v3.10.9
+33 error code ENOSYS
+34 error errno ENOSYS
+35 error syscall kill
+36 error kill ENOSYS
+37 error If you need help, you may report this error at:
+37 error     <https://github.com/npm/npm/issues>
+38 verbose exit [ 1, true ]
