@@ -1,6 +1,8 @@
 /* ==========================================================================
    Table of Contents
    ========================================================================== */
+
+
 /*
 
     1. Font Face
@@ -13,173 +15,333 @@
 
  */
 
+
 /* ==========================================================================
    2. General - Setting up some base styles
    ========================================================================== */
-   :root {
-    --main-color: #000;
-    --sec-color: #000;
-  }
-  
-  html,
-  body {
-    height: 100%;
-    margin: 0; }
 
-  body{
-      overflow-x: hidden;
-  }
-  
-  
-  /* ==========================================================================
+ :root {
+    --main-color: #00aaf8;
+    --sec-color: #757575;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    color: #757575;
+}
+
+a:hover,
+a:focus,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ==========================================================================
      3. Utilities - These things get used a lot
      ========================================================================== */
 
-  
-  
-  .nopadding {
+.nopadding {
     padding: 0 !important;
-  }
-  
-  .nomargin {
+}
+
+.nomargin {
     margin: 0 !important;
-  }
-  
-  .f12 {
+}
+
+.f12 {
     font-size: 12px;
-  }
-  
-  .f14 {
+}
+
+.f14 {
     font-size: 14px;
-  }
-  
-  .f16 {
+}
+
+.f16 {
     font-size: 16px;
-  }
-  
-  .f18 {
+}
+
+.f18 {
     font-size: 18px;
-  }
-  
-  .f20 {
+}
+
+.f20 {
     font-size: 20px;
-  }
-  
-  .f22 {
+}
+
+.f22 {
     font-size: 22px;
-  }
-  
-  .f24 {
+}
+
+.f24 {
     font-size: 24px;
-  }
-  
-  .f26 {
+}
+
+.f26 {
     font-size: 26px;
-  }
-  
-  .f28 {
+}
+
+.f28 {
     font-size: 28px;
-  }
-  
-  .f30 {
+}
+
+.f30 {
     font-size: 30px;
-  }
-  
-  .f32 {
+}
+
+.f32 {
     font-size: 32px;
-  }
-  
-  .f34 {
+}
+
+.f34 {
     font-size: 34px;
-  }
-  
-  .f36 {
+}
+
+.f36 {
     font-size: 36px;
-  }
-  
-  .f38 {
+}
+
+.f38 {
     font-size: 38px;
-  }
-  
-  .f40 {
+}
+
+.f40 {
     font-size: 40px;
-  }
-  
-  .f42 {
+}
+
+.f42 {
     font-size: 42px;
-  }
-  
-  .f44 {
+}
+
+.f44 {
     font-size: 44px;
-  }
-  
-  .f46 {
+}
+
+.f46 {
     font-size: 46px;
-  }
-  
-  .f48 {
+}
+
+.f48 {
     font-size: 48px;
-  }
-  
-  .fbold {
-    font-weight: 700;
-  }
-  
-  .fitalic {
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.fitalic {
     font-style: italic;
-  }
-  
-  .color-white {
+}
+
+.color-white {
     color: #fff;
-  }
-  
-  .color-black {
+}
+
+.color-black {
     color: #000;
-  }
-  
-  .color-main {
+}
+
+.color-main {
     color: var(--main-color);
-  }
-  
-  .color-sec {
+}
+
+.color-purple {
+    color: $purple;
+}
+
+.color-sec {
     color: var(--sec-color);
-  }
-  
-  .bg-main {
+}
+
+.bg-main {
     background-color: var(--main-color);
-  }
-  
-  .bg-sec {
+}
+
+.bg-sec {
     background-color: var(--sec-color);
-  }
-  
-  
-  /* ==========================================================================
+}
+
+
+/* ==========================================================================
      4. Header - The top of every page
      ========================================================================== */
 
-  
-  /* ==========================================================================
+.navbar-brand {
+    padding-top: 0;
+}
+
+header {
+    position: relative;
+}
+
+header.sticky {
+    height: 75px;
+    background: white;
+    z-index: 999;
+    transition: .5s all;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $dark-blue;
+    font-size: 14.66px;
+    padding: 0 20px;
+    letter-spacing: 2px;
+}
+
+//social icons inside header
+.social-icons {
+    >li {
+        list-style: none;
+        display: inline-block;
+    }
+    .item-instagram:before {
+        background: linear-gradient(45deg, #f09433 0, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+    .item-facebook:before {
+        background: #3B5998;
+    }
+    .social-button:focus:before,
+    .social-button:hover:before {
+        top: -10%;
+        left: -10%;
+    }
+    >li>a {
+        width: 30px;
+        border-radius: 50%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        font-size: 16px;
+        justify-content: center;
+        background: $dark-blue;
+        color: white;
+        transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+        position: relative;
+        overflow: hidden;
+    }
+    .social-button:focus .fa,
+    .social-button:hover .fa {
+        color: #fff;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    .social-button .fa {
+        vertical-align: middle;
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+        -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+        transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    }
+    >li>a:hover {
+        background: transparent;
+    }
+    >li>a:before {
+        content: '';
+        background-color: #000;
+        width: 120%;
+        height: 120%;
+        position: absolute;
+        top: 90%;
+        left: -110%;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+        transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    }
+}
+
+
+/* ==========================================================================
      5. Page Content - When you click on an individual page
      ========================================================================== */
-  
-  .thumb .thumb-img {
+
+.main-slider {
+    max-height: 100vh;
+    height: 725px;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &:before {
+        background: url(../../assets/images/teste-slide.jpg) center;
+        z-index: 1;
+    }
+    &:after {
+        z-index: 2;
+        background: var(--main-color);
+        opacity: 0.75;
+    }
+    .thumb-slide {
+        height: 585px;
+    }
+    .content-slide {
+        z-index: 3;
+    }
+    .text-slide {
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        left: 0;
+    }
+    .fa-long-arrow-right {
+        padding: 0 10px;
+    }
+    .link-slide:hover .fa-long-arrow-right {
+        transition: 1s ease-in-out;
+        padding: 0 20px;
+    }
+}
+
+.thumb-img {
     display: block;
     height: 100%;
     width: 100%;
     background-size: cover !important;
-    background-position: center !important; }
-  
-  /* ==========================================================================
+    background-position: center !important;
+}
+
+.shadow-smooth {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .13), 1px 2px 2px rgba(0, 0, 0, .1), -1px -2px 2px rgba(0, 0, 0, .05);
+}
+
+
+/* ==========================================================================
      6. Footer - The bottom of every page
      ========================================================================== */
-  
-  /* ==========================================================================
+
+
+/* ==========================================================================
      7. Media Queries - 
      ========================================================================== */
-  @media (max-width: 992px) {
-  }
-  @media (max-width: 767px) {
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .header-home {
+        height: 80px;
+    }
 }
-  
-  
+
+@media (max-width: 992px) {}
+
+@media (max-width: 767px) {}
