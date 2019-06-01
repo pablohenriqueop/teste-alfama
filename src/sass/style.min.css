@@ -1,4 +1,21 @@
 @charset "UTF-8";
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+/*
+
+    1. Base
+    2. Utilities
+    3. Header
+    4. Page Content
+    5. Footer
+    6. Third Party Elements
+    7. Media Queries
+
+ */
+/* ==========================================================================
+   1. General - Setting up some base styles
+========================================================================== */
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -478,34 +495,6 @@ mark,
 
 .blockquote-footer::before {
   content: "\2014\00A0";
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-.img-thumbnail {
-  padding: 0.25rem;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-  max-width: 100%;
-  height: auto;
-}
-
-.figure {
-  display: inline-block;
-}
-
-.figure-img {
-  margin-bottom: 0.5rem;
-  line-height: 1;
-}
-
-.figure-caption {
-  font-size: 90%;
-  color: #6c757d;
 }
 
 .container {
@@ -1620,41 +1609,6 @@ mark,
   }
 }
 
-.fade {
-  -webkit-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .fade {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-.fade:not(.show) {
-  opacity: 0;
-}
-
-.collapse:not(.show) {
-  display: none;
-}
-
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-  transition: height 0.35s ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .collapsing {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2220,6 +2174,94 @@ mark,
 
 .align-text-top {
   vertical-align: text-top !important;
+}
+
+.bg-primary {
+  background-color: #007bff !important;
+}
+
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #0062cc !important;
+}
+
+.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+a.bg-secondary:hover, a.bg-secondary:focus,
+button.bg-secondary:hover,
+button.bg-secondary:focus {
+  background-color: #545b62 !important;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+a.bg-success:hover, a.bg-success:focus,
+button.bg-success:hover,
+button.bg-success:focus {
+  background-color: #1e7e34 !important;
+}
+
+.bg-info {
+  background-color: #17a2b8 !important;
+}
+
+a.bg-info:hover, a.bg-info:focus,
+button.bg-info:hover,
+button.bg-info:focus {
+  background-color: #117a8b !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+a.bg-warning:hover, a.bg-warning:focus,
+button.bg-warning:hover,
+button.bg-warning:focus {
+  background-color: #d39e00 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+a.bg-danger:hover, a.bg-danger:focus,
+button.bg-danger:hover,
+button.bg-danger:focus {
+  background-color: #bd2130 !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+a.bg-light:hover, a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+  background-color: #dae0e5 !important;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+a.bg-dark:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: #1d2124 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
 }
 
 .border {
@@ -3424,6 +3466,66 @@ mark,
   .align-self-xl-stretch {
     -ms-flex-item-align: stretch !important;
         align-self: stretch !important;
+  }
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.float-none {
+  float: none !important;
+}
+
+@media (min-width: 576px) {
+  .float-sm-left {
+    float: left !important;
+  }
+  .float-sm-right {
+    float: right !important;
+  }
+  .float-sm-none {
+    float: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .float-md-left {
+    float: left !important;
+  }
+  .float-md-right {
+    float: right !important;
+  }
+  .float-md-none {
+    float: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .float-lg-left {
+    float: left !important;
+  }
+  .float-lg-right {
+    float: right !important;
+  }
+  .float-lg-none {
+    float: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .float-xl-left {
+    float: left !important;
+  }
+  .float-xl-right {
+    float: right !important;
+  }
+  .float-xl-none {
+    float: none !important;
   }
 }
 
@@ -5632,6 +5734,14 @@ a.text-dark:hover, a.text-dark:focus {
   color: inherit !important;
 }
 
+.visible {
+  visibility: visible !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -5655,35 +5765,18 @@ a.text-dark:hover, a.text-dark:focus {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.fa-facebook:before {
-  content: "";
-}
-
 .fa-instagram:before {
   content: "";
+}
+
+.fa-facebook:before {
+  content: "";
 }
 
 .fa-long-arrow-right:before {
   content: "";
 }
 
-/* ==========================================================================
-   Table of Contents
-   ========================================================================== */
-/*
-
-    1. Font Face
-    2. General
-    3. Utilities
-    4. Header
-    5. Page Content
-    6. Footer
-    7. Media Queries
-
- */
-/* ==========================================================================
-   2. General - Setting up some base styles
-   ========================================================================== */
 :root {
   --main-color: #00aaf8;
   --sec-color: #757575;
@@ -5705,12 +5798,11 @@ a:focus,
 a:visited,
 a:active {
   text-decoration: none;
-  color: inherit;
 }
 
 /* ==========================================================================
-     3. Utilities - These things get used a lot
-     ========================================================================== */
+     2. Utilities - These things get used a lot
+========================================================================== */
 .nopadding {
   padding: 0 !important;
 }
@@ -5819,6 +5911,10 @@ a:active {
   color: #2b3e5e;
 }
 
+.color-dark-blue {
+  color: #2b3e5e;
+}
+
 .color-sec {
   color: var(--sec-color);
 }
@@ -5831,15 +5927,61 @@ a:active {
   background-color: var(--sec-color);
 }
 
+/* The animation code */
+@-webkit-keyframes shine {
+  10% {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    -webkit-transition-property: left, top, opacity;
+    transition-property: left, top, opacity;
+    -webkit-transition-duration: 0.7s, 0.7s, 0.15s;
+            transition-duration: 0.7s, 0.7s, 0.15s;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+  }
+  100% {
+    opacity: 0;
+    top: -30%;
+    left: -30%;
+    -webkit-transition-property: left, top, opacity;
+    transition-property: left, top, opacity;
+  }
+}
+@keyframes shine {
+  10% {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    -webkit-transition-property: left, top, opacity;
+    transition-property: left, top, opacity;
+    -webkit-transition-duration: 0.7s, 0.7s, 0.15s;
+            transition-duration: 0.7s, 0.7s, 0.15s;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+  }
+  100% {
+    opacity: 0;
+    top: -30%;
+    left: -30%;
+    -webkit-transition-property: left, top, opacity;
+    transition-property: left, top, opacity;
+  }
+}
+
 /* ==========================================================================
      4. Header - The top of every page
-     ========================================================================== */
+========================================================================== */
 .navbar-brand {
   padding-top: 0;
 }
 
 header {
   position: relative;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 header.sticky {
@@ -5852,6 +5994,8 @@ header.sticky {
   top: 0;
   left: 0;
   width: 100%;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -5938,9 +6082,16 @@ header.sticky {
 
 /* ==========================================================================
      5. Page Content - When you click on an individual page
-     ========================================================================== */
+ ========================================================================== */
+section.team,
+section.services,
+footer {
+  padding: 70px 0;
+  background: url(../../assets/images/bg-footer.jpg) center;
+  background-size: cover;
+}
+
 .main-slider {
-  max-height: 100vh;
   height: 725px;
 }
 
@@ -5951,6 +6102,10 @@ header.sticky {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.main-slider .title-slide {
+  font-size: 27px;
 }
 
 .main-slider:before {
@@ -5977,16 +6132,235 @@ header.sticky {
   top: 60%;
   width: 100%;
   left: 0;
+  padding: 0 15px;
 }
 
 .main-slider .fa-long-arrow-right {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
-.main-slider .link-slide:hover .fa-long-arrow-right {
+.thumb {
+  overflow: hidden;
+}
+
+.thumb-with-hover-grow:hover .thumb-img {
+  -webkit-transform: scale(1.02, 1.02);
+          transform: scale(1.02, 1.02);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: .95;
+}
+
+.about {
+  padding: 70px 0;
+}
+
+.about .thumb-about {
+  height: 400px;
+}
+
+.about .section-title {
+  margin-top: 40px;
+}
+
+.about .text-about {
+  font-size: 14.99px;
+  line-height: 26.98px;
+}
+
+.about .link-call-to-action:hover {
+  background: #2b3e5e;
+  color: white;
+}
+
+.gallery {
+  padding-bottom: 70px;
+}
+
+.gallery .btn-ver-mais {
+  display: none;
+  padding: 5px 20px;
+  background: white;
+  color: var(--main-color);
+  position: relative;
+  z-index: 6;
+  overflow: hidden;
+}
+
+.gallery .btn-ver-mais:after {
+  -webkit-animation: shine 5s ease-in-out infinite;
+          animation: shine 5s ease-in-out infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.13)), color-stop(77%, rgba(255, 255, 255, 0.13)), color-stop(92%, rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+}
+
+.gallery .thumb-img {
+  height: 270px;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.gallery .thumb-img:before, .gallery .thumb-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.gallery .thumb-img:before {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.gallery .text-gallery {
+  position: absolute;
+  right: 25px;
+  bottom: 0px;
+  z-index: 4;
+  line-height: 20px;
+  text-align: right;
+}
+
+.gallery .hover-effect:hover,
+.gallery .hover-effet:active,
+.gallery .hover-effect:focus {
+  position: static;
+}
+
+.gallery .hover-effect:hover > .thumb-img,
+.gallery .hover-effet:active > .thumb-img,
+.gallery .hover-effect:focus > .thumb-img {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  padding: 0 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.gallery .hover-effect:hover .btn-ver-mais,
+.gallery .hover-effet:active .btn-ver-mais,
+.gallery .hover-effect:focus .btn-ver-mais {
+  display: inline-block;
+  width: 180px;
+  border-radius: 5px;
+}
+
+.gallery .hover-effect:hover .btn-ver-mais:hover,
+.gallery .hover-effet:active .btn-ver-mais:hover,
+.gallery .hover-effect:focus .btn-ver-mais:hover {
+  width: 220px;
+  border-radius: 40px;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+  opacity: 0.88;
+}
+
+.gallery .hover-effect:hover > .thumb-img:after,
+.gallery .hover-effet:active > .thumb-img:after,
+.gallery .hover-effect:focus > .thumb-img:after {
+  background: var(--main-color);
+  opacity: 0.8;
+}
+
+.gallery .hover-effect:hover .text-gallery,
+.gallery .hover-effet:active .text-gallery,
+.gallery .hover-effect:focus .text-gallery {
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  z-index: 6;
+  text-align: center;
+}
+
+.team {
+  overflow: hidden;
+}
+
+.team:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  max-width: 1574px;
+  left: 15px;
+  background: url(../../assets/images/before-team.jpg);
+  height: 964px;
+}
+
+.team .thumb-team {
+  height: 500px;
+}
+
+.team .thumb-team > .thumb-img {
+  background-position: initial !important;
+}
+
+.services .thumb-service {
+  height: 335px;
+  position: relative;
+  margin-top: 20px;
+  padding: 30px 20px;
+  border: 6px solid transparent;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.services .thumb-service:hover, .services .thumb-service:active, .services .thumb-service:focus {
+  border-color: var(--main-color);
+}
+
+.services .title-service {
+  line-height: 33.33px;
+  font-weight: 400;
+}
+
+.services .link-call-to-action {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  background: white;
+  margin: 0;
+}
+
+.services .link-call-to-action:hover {
+  border-radius: 0;
+  padding: inherit;
+}
+
+.video {
+  padding: 110px 0;
+}
+
+.video .title-video {
+  line-height: 26.85px;
+}
+
+.video .link-call-to-action:hover .fa-long-arrow-right {
+  padding: 0 5px;
 }
 
 .thumb-img {
@@ -5998,16 +6372,62 @@ header.sticky {
 }
 
 .shadow-smooth {
-  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.13), 1px 2px 2px rgba(0, 0, 0, 0.1), -1px -2px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.13), 1px 2px 2px rgba(0, 0, 0, 0.1), -1px -2px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.link-call-to-action {
+  margin: 15px 0;
+  letter-spacing: 1.6px;
+}
+
+.link-call-to-action:hover {
+  background: white;
+  text-align: center;
+  padding: 7px 30px;
+  border-radius: 40px;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
+.link-call-to-action:hover .fa-long-arrow-right {
+  -webkit-transition: 0s ease;
+  transition: 0s ease;
+  padding: 0 10px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-title {
+  font-size: 38px;
+  color: var(--main-color);
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  position: relative;
+  font-weight: 400;
+}
+
+.section-title:before {
+  content: '';
+  height: 2px;
+  width: 44px;
+  background: var(--main-color);
+  display: inline-block;
 }
 
 /* ==========================================================================
      6. Footer - The bottom of every page
-     ========================================================================== */
+ ========================================================================== */
+.footer {
+  padding-top: 30px;
+}
+
 /* ==========================================================================
      7. Media Queries - 
-     ========================================================================== */
+========================================================================== */
 @media (min-width: 992px) {
   .header-home {
     height: 80px;

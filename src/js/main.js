@@ -15,3 +15,17 @@ function myFunction() {
         navbar.classList.remove("sticky");
     }
 }
+
+jQuery(document).ready(function($) {
+    var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+            // ... more custom settings?
+    });
+    $('.parallax').paroller({
+        factor: 0.3, // multiplier for scrolling speed and offset
+        factorXs: 0.1, // multiplier for scrolling speed and offset
+        type: 'background', // background, foreground
+        direction: 'vertical', // vertical, horizontal
+        transition: 'transform 0.2s ease-in' // CSS transition
+    });
+});

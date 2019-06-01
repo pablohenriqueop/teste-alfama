@@ -1,0 +1,143 @@
+.nopadding {
+    padding: 0 !important;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.f22 {
+    font-size: 22px;
+}
+
+.f24 {
+    font-size: 24px;
+}
+
+.f26 {
+    font-size: 26px;
+}
+
+.f28 {
+    font-size: 28px;
+}
+
+.f30 {
+    font-size: 30px;
+}
+
+.f32 {
+    font-size: 32px;
+}
+
+.f34 {
+    font-size: 34px;
+}
+
+.f36 {
+    font-size: 36px;
+}
+
+.f38 {
+    font-size: 38px;
+}
+
+.f40 {
+    font-size: 40px;
+}
+
+.f42 {
+    font-size: 42px;
+}
+
+.f44 {
+    font-size: 44px;
+}
+
+.f46 {
+    font-size: 46px;
+}
+
+.f48 {
+    font-size: 48px;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.fitalic {
+    font-style: italic;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.color-black {
+    color: #000;
+}
+
+.color-main {
+    color: var(--main-color);
+}
+
+.color-purple {
+    color: $purple;
+}
+
+.color-dark-blue {
+    color: $dark-blue;
+}
+
+.color-sec {
+    color: var(--sec-color);
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.bg-sec {
+    background-color: var(--sec-color);
+}
+
+
+/* The animation code */
+
+@keyframes shine {
+    10% {
+        opacity: 1;
+        top: -30%;
+        left: -30%;
+        transition-property: left, top, opacity;
+        transition-duration: 0.7s, 0.7s, 0.15s;
+        transition-timing-function: ease;
+    }
+    100% {
+        opacity: 0;
+        top: -30%;
+        left: -30%;
+        transition-property: left, top, opacity;
+    }
+}

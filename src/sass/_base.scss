@@ -1,0 +1,22 @@
+:root {
+    --main-color: #00aaf8;
+    --sec-color: #757575;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    color: #757575;
+}
+
+a:hover,
+a:focus,
+a:visited,
+a:active {
+    text-decoration: none;
+}
