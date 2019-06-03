@@ -3,8 +3,6 @@ section.team,
 section.services,
 footer {
     padding: 70px 0;
-    background: url(../../assets/images/bg-footer.jpg) center;
-    background-size: cover;
 }
 
 // main-slider section
@@ -46,6 +44,31 @@ footer {
     }
     .fa-long-arrow-right {
         padding: 0 5px;
+    }
+    .owl-theme .owl-nav {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 9;
+        width: 100px;
+        background: white;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel button.owl-dot {
+        font-size: 28px;
+    }
+    .owl-theme .owl-nav [class*='owl-']:hover {
+        background: transparent;
+        color: var(--main-color);
+        opacity: 0.8;
+    }
+    .owl-theme .owl-nav [class*='owl-'] {
+        margin: 0 15px;
     }
 }
 
@@ -130,7 +153,7 @@ footer {
         text-align: right;
     }
     .hover-effect:hover,
-    .hover-effet:active,
+    .hover-effect:active,
     .hover-effect:focus {
         position: static;
         >.thumb-img {
@@ -140,9 +163,9 @@ footer {
             right: 0;
             bottom: 0;
             left: 0;
-            transition: 1s ease-in-out;
             height: 100%;
             width: 100%;
+            transition: height 1s, width 2s;
         }
         .btn-ver-mais {
             display: inline-block;
@@ -182,8 +205,9 @@ footer {
         width: 100%;
         max-width: 1574px;
         left: 15px;
-        background: url(../../assets/images/before-team.jpg);
-        height: 964px;
+        background: url(../../assets/images/before-team.jpg) center;
+        background-size: cover;
+        height: 890px;
     }
     .thumb-team {
         height: 500px;
@@ -237,6 +261,9 @@ footer {
         &:hover .fa-long-arrow-right {
             padding: 0 5px;
         }
+    }
+    .link-call-to-action {
+        padding: 7px 30px;
     }
 }
 

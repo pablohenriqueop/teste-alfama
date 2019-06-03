@@ -6,5 +6,68 @@
 }
 
 @media (max-width: 992px) {}
+//smartphones
+@media (max-width: 767px) {
+    .main-slider .text-slide{
+        position: static;
+        padding: 0;
+    }
 
-@media (max-width: 767px) {}
+    .services .thumb-service{
+        border: 6px solid #f2f2f2;
+    }
+
+    section.team, section.services, footer {
+        padding: 50px 0;
+    }
+    
+    .main-slider .thumb-slide{
+        height: 400px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .about .thumb-about, .team .thumb-team{
+        height: 300px;
+    }
+
+    .footer input[type="submit"]{
+        width: 100%;
+    }
+
+    .gallery .hover-effect {
+        height: 270px;
+    }
+
+    .gallery .hover-effect:hover, .gallery .hover-effect:active, .gallery .hover-effect:focus {
+        position: relative;
+    }
+
+}
+
+@media(max-width: 768px){
+    .nav-tgl {
+        display: inline-block;
+    }
+    header.sticky {
+        z-index: 98;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .about .section-title{
+        margin-top: 20px;
+    }
+    
+}
+
+@media(min-width: 768px) and (max-width: 900px){
+    .team .thumb-team{
+        height: 550px;
+    }
+}
+

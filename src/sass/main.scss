@@ -20,12 +20,10 @@
    1. General - Setting up some base styles
 ========================================================================== */
 
-//bootstrap import
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-//fontawesome import
-@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+//libs
+@import "libs";
 //variables
-@import "./variables.scss";
+@import "variables.scss";
 //base
 @import 'base';
 
